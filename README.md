@@ -1,15 +1,14 @@
-<h1 align="center"><i>Power BG</i></h1>
-<p align="center">#TODO</p>
-<p align="center"><a href="https://github.com/info-mono/powerbg/blob/main/LICENSE"><img src="https://img.shields.io/github/license/info-mono/powerbg?labelColor=073551&color=4EAA25&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%234EAA25.svg?labelColor=073551&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
-<p align="center"><a href="https://github.com/info-mono/powerbg/watchers"><img src="https://img.shields.io/github/watchers/info-mono/powerbg?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/stargazers"><img src="https://img.shields.io/github/stars/info-mono/powerbg?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/network/members"><img src="https://img.shields.io/github/forks/info-mono/powerbg?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/issues"><img src="https://img.shields.io/github/issues/info-mono/powerbg?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
+<h1 align="center"><i>PowerBG</i></h1>
+<p align="center">Add background color to info line like Powerline</p>
+<p align="center"><a href="https://github.com/info-mono/powerbg/blob/main/LICENSE"><img src="https://img.shields.io/github/license/info-mono/powerbg?labelColor=383838&color=585858&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%23585858.svg?labelColor=383838&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
+<p align="center"><a href="https://github.com/info-mono/powerbg/watchers"><img src="https://img.shields.io/github/watchers/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/stargazers"><img src="https://img.shields.io/github/stars/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/network/members"><img src="https://img.shields.io/github/forks/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/issues"><img src="https://img.shields.io/github/issues/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a></p>
 
 ## 💡 About
-**Power BG** is a tool written in [`portable sh`](https://github.com/dylanaraps/pure-sh-bible).
+**PowerBG** is a tool that add to color string's background like [Powerline](https://github.com/powerline/powerline) written in [`portable sh`](https://github.com/dylanaraps/pure-sh-bible).
 
 ## 🚀 Setup
 ### 🧾 Dependencies
 - `sh` to process
-- The language that you want to run (obviously)
 
 ### 📥 Installation
 #### 🔧 Manually
@@ -40,21 +39,21 @@ For [Basher](https://github.com/bpkg/bpkg) user:
 basher install info-mono/powerbg
 ```
 
-> *If you can and want to port Power BG to other package managers, feel free to do so.*
+> *If you can and want to port PowerBG to other package managers, feel free to do so.*
 
 ## ⌨️ Usage
 Run `powerbg` in the terminal:
 
 ```sh
-powerbg
+powerbg COLOR STRING COLOR STRING COLOR STRING ...
 ```
 
 ## ⚙️ Configuration
-
+`#TODO`
 
 ## 💌 Credits
 Special thanks to:
-- [****]() by []()
+- [**Powerline**](https://github.com/powerline/powerline) by [Powerline organization](https://github.com/orgs/powerline/people)
 
 <br><br><br><br>
 

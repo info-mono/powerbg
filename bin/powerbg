@@ -7,7 +7,7 @@
 # /_/    \____/|__/|__/\___/_/  /_____/\____/
 
 # File:         powerbg
-# Description:  #TODO
+# Description:  Add background color to info line like Powerline
 # Author:       NNB
 #               └─ https://github.com/NNBnh
 # URL:          https://github.com/info-mono/powerbg
@@ -33,7 +33,7 @@ LEFTEND_INNER="${POWERBG_LEFTEND_INNER:- }"
 RIGHTEND_OUTER="${POWERBG_RIGHTEND_OUTER:-}"
 RIGHTEND_INNER="${POWERBG_RIGHTEND_INNER:- }"
 SEPARATOR_LEFT="${POWERBG_SEPARATOR_LEFT:- }"
-SEPARATOR_RIGHT="${POWERBG_SEPARATOR_RIGHT:- }"
+SEPARATOR_RIGHT="${POWERBG_SEPARATOR_RIGHT:-$POWERBG_RIGHTEND_OUTER }"
 SEPARATOR_SAME="${POWERBG_SEPARATOR_SAME:-  }"
 
 arg_type='color'
