@@ -1,0 +1,71 @@
+#!/bin/sh
+
+#     ____                          ____  ______
+#    / __ \____ _      _____  _____/ __ )/ ____/
+#   / /_/ / __ \ | /| / / _ \/ ___/ __  / / __
+#  / ____/ /_/ / |/ |/ /  __/ /  / /_/ / /_/ /
+# /_/    \____/|__/|__/\___/_/  /_____/\____/
+
+# File:         powerbg
+# Description:  #TODO
+# Author:       NNB
+#               └─ https://github.com/NNBnh
+# URL:          https://github.com/info-mono/powerbg
+# License:      GPLv3
+
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU General Public License as published by
+#    the Free Software Foundation, either version 3 of the License, or
+#    (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#    GNU General Public License for more details.
+#
+#    You should have received a copy of the GNU General Public License
+#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+
+# Values
+POWERBG_LEFTEND_OUTER="${POWERBG_LEFTEND_OUTER:- }"
+POWERBG_LEFTEND_INNER="${POWERBG_LEFTEND_INNER:- }"
+POWERBG_RIGHTEND_OUTER="${POWERBG_RIGHTEND_OUTER:-}"
+POWERBG_RIGHTEND_INNER="${POWERBG_RIGHTEND_INNER:- }"
+POWERBG_SEPARATOR_LEFT="${POWERBG_SEPARATOR_LEFT:- }"
+POWERBG_SEPARATOR_RIGHT="${POWERBG_SEPARATOR_RIGHT:- }"
+POWERBG_SEPARATOR_SAME="${POWERBG_SEPARATOR_SAME:-  }"
+
+arg_type='color'
+
+for arg in "$@"; do
+	if [ "$arg_type" = 'color' ]; then
+		color_current="${arg:-0}"
+
+		arg_type='info'
+	elif [ "$arg_type" = 'info' ]; then
+		[ -n "$arg" ] && {
+			[ -n "$INFO" ] && {
+				if [ "$color_current" = "$COLOR_LAST" ]; then
+					INFO="$INFO\033[0;48;5;${color_current}m$POWERBG_SEPARATOR_SAME"
+				else
+					INFO="$INFO\033[0;38;5;$color_current;48;5;${COLOR_LAST}m$POWERBG_SEPARATOR_LEFT\033[0;38;5;$COLOR_LAST;48;5;${color_current}m$POWERBG_SEPARATOR_RIGHT"
+				fi
+			}
+
+			INFO="$INFO\033[0;48;5;${color_current}m$arg"
+
+			COLOR_FIRST="${COLOR_FIRST:-$color_current}"
+			COLOR_LAST="$color_current"
+		}
+
+		arg_type='color'
+	fi
+done
+
+
+# Start
+[ -n "$INFO" ] && printf '%b' "\033[0;38;5;${COLOR_FIRST}m$POWERBG_LEFTEND_OUTER\033[0;48;5;${COLOR_FIRST}m$POWERBG_LEFTEND_INNER$INFO$POWERBG_RIGHTEND_INNER\033[0;38;5;${COLOR_LAST}m$POWERBG_RIGHTEND_OUTER\033[0m"
+
+
+exit 0

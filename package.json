@@ -1,0 +1,9 @@
+{
+  "name": "powerbg",
+  "version": "1.0.0",
+  "description": "#TODO",
+  "global": "true",
+  "scripts": ["bin/powerbg"],
+  "files": ["man/powerbg.1"],
+  "install": "make install"
+}
