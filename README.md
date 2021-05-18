@@ -1,5 +1,5 @@
 <h1 align="center"><i>PowerBG</i></h1>
-<p align="center">Add background color to info line like Powerline</p>
+<p align="center">Add background color to strings in Powerline ways</p>
 <p align="center"><a href="https://github.com/info-mono/powerbg/blob/main/LICENSE"><img src="https://img.shields.io/github/license/info-mono/powerbg?labelColor=383838&color=585858&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%23585858.svg?labelColor=383838&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
 <p align="center"><a href="https://github.com/info-mono/powerbg/watchers"><img src="https://img.shields.io/github/watchers/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/stargazers"><img src="https://img.shields.io/github/stars/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/network/members"><img src="https://img.shields.io/github/forks/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/issues"><img src="https://img.shields.io/github/issues/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a></p>
 
@@ -48,8 +48,46 @@ Run `powerbg` in the terminal:
 powerbg COLOR STRING COLOR STRING COLOR STRING ...
 ```
 
+Examples:
+```sh
+powerbg '0' "$USER" '8' "$PWD"
+```
+
+```sh
+POWERBG_LEFTEND_OUTER='' \
+POWERBG_RIGHTEND_OUTER='' \
+POWERBG_SEPARATOR_RIGHT=' ' \
+POWERBG_SEPARATOR_SAME=' \033[30m ' \
+powerbg '1' '\033[30mRed' '3' '\033[30mYellow' '3' '\033[30mYellow again' '2' '\033[30mGreen' '6' '\033[30mCyan' '4' '\033[30mBlue' '5' '\033[30mPurple'
+```
+
+```sh
+green='\033[30mTree'
+cyan='\033[30mSky'
+blue='\033[30mWater'
+purple='' # Nothing
+red='\033[30mApple'
+
+POWERBG_LEFTEND_OUTER='' \
+POWERBG_RIGHTEND_OUTER='' \
+POWERBG_SEPARATOR_RIGHT=' ' \
+POWERBG_SEPARATOR_SAME=' \033[30m ' \
+powerbg '2' "$green" '6' "$cyan" '4' "$blue" '5' "$purple" '1' "$red"
+```
+
 ## ⚙️ Configuration
-`#TODO`
+PowerBG is configured through environment variables: `export POWERBG_<SETTING>="<value>"`
+
+|Value                    |Valid     |Default|Description                                                                      |
+|-------------------------|----------|-------|---------------------------------------------------------------------------------|
+|`POWERBG_LEFTEND_OUTER`  |`<string>`|` `    |Set left end outer string                                                        |
+|`POWERBG_LEFTEND_INNER`  |`<string>`|` `    |Set left end inner string                                                        |
+|`POWERBG_RIGHTEND_OUTER` |`<string>`|``    |Set right end outer string                                                       |
+|`POWERBG_RIGHTEND_INNER` |`<string>`|` `    |Set right end inner string                                                       |
+|-------------------------|----------|-------|---------------------------------------------------------------------------------|
+|`POWERBG_SEPARATOR_LEFT` |`<string>`|` `    |Set separator left string                                                        |
+|`POWERBG_SEPARATOR_RIGHT`|`<string>`|` `   |Set separator right string                                                       |
+|`POWERBG_SEPARATOR_SAME` |`<string>`|`  `  |Set separator string to use when when separating two elements with the same color|
 
 ## 💌 Credits
 Special thanks to:
