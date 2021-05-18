@@ -53,6 +53,9 @@ Examples:
 powerbg '0' "$USER" '8' "$PWD"
 ```
 
+![Example 1](https://user-images.githubusercontent.com/43980777/118599299-84478d00-b7d9-11eb-9195-1ccd8bb74358.png)
+
+
 ```sh
 POWERBG_LEFTEND_OUTER='' \
 POWERBG_RIGHTEND_OUTER='' \
@@ -60,6 +63,8 @@ POWERBG_SEPARATOR_RIGHT=' ' \
 POWERBG_SEPARATOR_SAME=' \033[30m ' \
 powerbg '1' '\033[30mRed' '3' '\033[30mYellow' '3' '\033[30mYellow again' '2' '\033[30mGreen' '6' '\033[30mCyan' '4' '\033[30mBlue' '5' '\033[30mPurple'
 ```
+
+![Example 2](https://user-images.githubusercontent.com/43980777/118599338-90cbe580-b7d9-11eb-9c78-a7144352707b.png)
 
 ```sh
 green='\033[30mTree'
@@ -75,6 +80,8 @@ POWERBG_SEPARATOR_SAME=' \033[30m ' \
 powerbg '2' "$green" '6' "$cyan" '4' "$blue" '5' "$purple" '1' "$red"
 ```
 
+![Example 3](https://user-images.githubusercontent.com/43980777/118599376-9b867a80-b7d9-11eb-9df4-e19b9a5b62e0.png)
+
 ## ⚙️ Configuration
 PowerBG is configured through environment variables: `export POWERBG_<SETTING>="<value>"`
 
@@ -84,7 +91,7 @@ PowerBG is configured through environment variables: `export POWERBG_<SETTING>="
 |`POWERBG_LEFTEND_INNER`  |`<string>`|` `    |Set left end inner string                                                        |
 |`POWERBG_RIGHTEND_OUTER` |`<string>`|``    |Set right end outer string                                                       |
 |`POWERBG_RIGHTEND_INNER` |`<string>`|` `    |Set right end inner string                                                       |
-|-------------------------|----------|-------|---------------------------------------------------------------------------------|
+|                         |          |       |                                                                                 |
 |`POWERBG_SEPARATOR_LEFT` |`<string>`|` `    |Set separator left string                                                        |
 |`POWERBG_SEPARATOR_RIGHT`|`<string>`|` `   |Set separator right string                                                       |
 |`POWERBG_SEPARATOR_SAME` |`<string>`|`  `  |Set separator string to use when when separating two elements with the same color|
