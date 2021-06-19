@@ -1,5 +1,5 @@
 <p align="center"><a href="https://github.com/info-mono/powerbg"><img src="https://user-images.githubusercontent.com/43980777/118600621-7135bc80-b7db-11eb-919d-0c2d07fa4a0e.png"></a></p>
-<p align="center"><a href="https://github.com/info-mono/powerbg/blob/main/LICENSE"><img src="https://img.shields.io/github/license/info-mono/powerbg?labelColor=383838&color=585858&style=for-the-badge" alt="License: GPL-3.0"></a> <img src="https://img.shields.io/badge/development-completed-%23585858.svg?labelColor=383838&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></p>
+<p align="center"><a href="https://github.com/info-mono/powerbg/blob/main/LICENSE"><img src="https://img.shields.io/github/license/info-mono/powerbg?labelColor=383838&color=585858&style=for-the-badge" alt="License: GPL-3.0"></a> <a href="https://gist.github.com/NNBnh/9ef453aba3efce26046e0d3119dab5a7#development-completed"><img src="https://img.shields.io/badge/development-completed-%23585858.svg?labelColor=383838&style=for-the-badge&logoColor=FFFFFF" alt="Development completed"></a></p>
 <p align="center"><a href="https://github.com/info-mono/powerbg/watchers"><img src="https://img.shields.io/github/watchers/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/stargazers"><img src="https://img.shields.io/github/stars/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/network/members"><img src="https://img.shields.io/github/forks/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a> <a href="https://github.com/info-mono/powerbg/issues"><img src="https://img.shields.io/github/issues/info-mono/powerbg?labelColor=383838&color=585858&style=flat-square"></a></p>
 
 ## 💡 About
@@ -7,19 +7,17 @@
 
 ## 🚀 Setup
 ### 🧾 Dependencies
-- `sh` to process
+- [Unix commands](https://en.wikipedia.org/wiki/List_of_Unix_commands) to process
 
 ### 📥 Installation
 #### 🔧 Manually
-- Option 1: using `curl`
-
+Option 1: using `curl`
 ```sh
 curl https://raw.githubusercontent.com/info-mono/powerbg/main/bin/powerbg > ~/.local/bin/powerbg
 chmod +x ~/.local/bin/powerbg
 ```
 
-- Option 2: using `git`
-
+Option 2: using `git`
 ```sh
 git clone https://github.com/info-mono/powerbg.git ~/.local/share/powerbg
 ln -s ~/.local/share/powerbg/bin/powerbg ~/.local/bin/powerbg
@@ -27,13 +25,11 @@ ln -s ~/.local/share/powerbg/bin/powerbg ~/.local/bin/powerbg
 
 #### 📦 Package manager
 For [`bpkg`](https://github.com/bpkg/bpkg) user:
-
 ```sh
 bpkg install info-mono/powerbg
 ```
 
 For [Basher](https://github.com/bpkg/bpkg) user:
-
 ```sh
 basher install info-mono/powerbg
 ```
@@ -42,7 +38,6 @@ basher install info-mono/powerbg
 
 ## ⌨️ Usage
 Run `powerbg` in the terminal:
-
 ```sh
 powerbg COLOR STRING COLOR STRING COLOR STRING ...
 ```
@@ -53,7 +48,6 @@ powerbg '0' "$USER" '8' "$PWD"
 ```
 
 ![Example 1](https://user-images.githubusercontent.com/43980777/118599299-84478d00-b7d9-11eb-9195-1ccd8bb74358.png)
-
 
 ```sh
 POWERBG_LEFTEND_OUTER='' \
@@ -83,7 +77,6 @@ powerbg '2' "$green" '6' "$cyan" '4' "$blue" '5' "$purple" '1' "$red"
 
 ## ⚙️ Configuration
 PowerBG is configured through environment variables: `export POWERBG_<SETTING>="<value>"`
-
 |Value                    |Valid     |Default|Description                                                                      |
 |-------------------------|----------|-------|---------------------------------------------------------------------------------|
 |`POWERBG_LEFTEND_OUTER`  |`<string>`|` `    |Set left end outer string                                                        |
