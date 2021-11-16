@@ -76,16 +76,16 @@ powerbg '2' "$green" '6' "$cyan" '4' "$blue" '5' "$purple" '1' "$red"
 
 ## ⚙️ Configuration
 PowerBG is configured through environment variables: `export POWERBG_<SETTING>="<value>"`
-|Value                    |Valid     |Default|Description                                                                      |
+|Environment variable     |Valid     |Default|Description                                                                      |
 |-------------------------|----------|-------|---------------------------------------------------------------------------------|
-|`POWERBG_LEFTEND_OUTER`  |`<string>`|` `    |Set left end outer string                                                        |
-|`POWERBG_LEFTEND_INNER`  |`<string>`|` `    |Set left end inner string                                                        |
+|`POWERBG_LEFTEND_OUTER`  |`<string>`|*none* |Set left end outer string                                                        |
+|`POWERBG_LEFTEND_INNER`  |`<string>`|*none* |Set left end inner string                                                        |
 |`POWERBG_RIGHTEND_OUTER` |`<string>`|``    |Set right end outer string                                                       |
-|`POWERBG_RIGHTEND_INNER` |`<string>`|` `    |Set right end inner string                                                       |
+|`POWERBG_RIGHTEND_INNER` |`<string>`|*none* |Set right end inner string                                                       |
 |                         |          |       |                                                                                 |
-|`POWERBG_SEPARATOR_LEFT` |`<string>`|` `    |Set separator left string                                                        |
+|`POWERBG_SEPARATOR_LEFT` |`<string>`|*none* |Set separator left string                                                        |
 |`POWERBG_SEPARATOR_RIGHT`|`<string>`|` `   |Set separator right string                                                       |
-|`POWERBG_SEPARATOR_SAME` |`<string>`|`  `  |Set separator string to use when when separating two elements with the same color|
+|`POWERBG_SEPARATOR_SAME` |`<string>`|``  |Set separator string to use when when separating two elements with the same color|
 
 ## 💌 Credits
 Special thanks to:
