@@ -23,12 +23,12 @@ ln -s ~/.local/share/powerbg/bin/powerbg ~/.local/bin/powerbg
 ```
 
 #### 📦 Package manager
-For [`bpkg`](https://github.com/bpkg/bpkg) user:
+For [Bpkg](https://github.com/bpkg/bpkg) user:
 ```sh
 bpkg install info-mono/powerbg
 ```
 
-For [Basher](https://github.com/bpkg/bpkg) user:
+For [Basher](https://github.com/basherpm/basher) user:
 ```sh
 basher install info-mono/powerbg
 ```
